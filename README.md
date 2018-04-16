@@ -1,5 +1,5 @@
-# Landings_MTC-Eset
+# Landings_captcha
 Testing repo
 
 
-[Demo](https://grant-inna.github.io/Landings_MTC-Eset/dist/)
+[Demo](https://grant-inna.github.io/Landings_captcha/)
