@@ -24,7 +24,7 @@ gulp.task( 'browser', function() {
 });*/
 
 gulp.task('imageMIN', function() {
-    return gulp.src( 'img/*.{png,jpg,jpeg,svg}' )
+    return gulp.src( 'development/img/*.{png,jpg,jpeg,svg}' )
         .pipe(imagemin())
         .pipe(gulp.dest( 'production/img/' ))
         .pipe(notify('Images Compress Success!'));
