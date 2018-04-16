@@ -875,6 +875,18 @@ a {
   background-size: contain;
 }
 
+.header__purpose {
+  .flex;
+  width: 94%;
+  height: auto;
+  min-height: 1.5rem;
+  padding: .5rem;
+
+}
+.icon__purpose {
+
+}
+.header__purpose-text {}
 
 .header__info {
   .full-width;
@@ -951,28 +963,23 @@ a {
     font-size: 22px;
   }
 }
-.main__text {
-  font-family: 'DinDisplay-bold', Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  font-weight: 800;
-}
-.main__price {
-  font-family: 'DinDisplay-light', Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  transform: scaleX(.9) scaleY(.9);
-}
 
-.footer {
-  background: black;
-  padding: 1rem;
+
+.button__container {
+  .full-width;
+  padding: .5rem;
   margin-top: 1rem;
-  color: rgb(175, 175, 175);
-  text-align: justify;
 
-  .landscape( padding, .5rem );
   .landscape-h( @xxs, padding, 1rem );
 }
 
-.hide__content {
-  display: none;
+.button__choose {
+  .flex-center;
+  height: auto;
+  width: 100%;
+
+  > div {
+    .flex-center;
+    text-transform: uppercase;
+  }
 }

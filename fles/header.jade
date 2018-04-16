@@ -1,13 +1,14 @@
-mixin header( text, info )
+mixin header( text, what )
 .header__container
     .header
         .header__logo
         .header__description #{ text }
-        .header__elems
         .header__cross
             .icon__cross
     .header__purpose
+        .icon__purpose
+        .header__purpose-text Подтвердите, что вы не работ!
     .header__info Выберите изображение&nbsp;
-        strong #{ info }
+        strong #{ what }
         | &nbsp;на фото:
 
