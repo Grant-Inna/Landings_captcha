@@ -440,6 +440,11 @@
     @{name}: @value;
   }
 }
+.landscape-maxh( @height, @name, @value ) {
+  @media screen and (max-height: @height) and (orientation: landscape){
+    @{name}: @value;
+  }
+}
 .landscape-block-h( @height, @content ) {
   @media screen and (min-height: @height) and (orientation: landscape){
     @content();

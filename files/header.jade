@@ -1,14 +1,13 @@
 mixin header( text, what )
-.header__container
-    .header
-        .header__logo
-        .header__description #{ text }
-        .header__cross
-            .icon__cross
-    .header__purpose
-        .icon__purpose
-        .header__purpose-text Подтвердите, что вы не работ!
-    .header__info Выберите изображение&nbsp;
-        strong #{ what }
-        | &nbsp;на фото:
+    .header__container
+        .header
+            .header__logo
+            .header__description Сайт содержит материалы эро содержания&nbsp;
+                strong #{ text }
+            a( href="#" ).header__cross
+                .icon__cross
+        .header__purpose
+        .header__info Выберите изображение&nbsp;
+            strong #{ what }
+            | &nbsp;на фото:
 
