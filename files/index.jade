@@ -7,19 +7,19 @@ mixin index( title, text, what, what_2 )
             #container
                 include header
                 +header( text, what, what_2 )
-                .main__container
-                    .main__holder
-                        include captcha-image
-                        +captcha-image( '1' )
-                        +captcha-image( '2' )
-                        +captcha-image( '3' )
-                        +captcha-image( '4' )
-                        +captcha-image( '5' )
-                        +captcha-image( '6' )
-                        +captcha-image( '7' )
-                        +captcha-image( '8' )
-                        +captcha-image( '9' )
-
-                include footer
+                form
+                    .main__container
+                        .main__holder
+                            include captcha-image
+                            +captcha-image( '1' )
+                            +captcha-image( '2' )
+                            +captcha-image( '3' )
+                            +captcha-image( '4' )
+                            +captcha-image( '5' )
+                            +captcha-image( '6' )
+                            +captcha-image( '7' )
+                            +captcha-image( '8' )
+                            +captcha-image( '9' )
+                    include footer
 
 
