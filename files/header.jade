@@ -1,4 +1,4 @@
-mixin header( text, what )
+mixin header( text, what, what_2 )
     .header__container
         .header
             .header__logo
@@ -7,7 +7,7 @@ mixin header( text, what )
             a( href="#" ).header__cross
                 .icon__cross
         .header__purpose
-        .header__info Выберите изображение&nbsp;
+        .header__info Выберите изображения&nbsp;
             strong #{ what }
-            | &nbsp;на фото:
+            | &nbsp;#{ what_2 }:
 

@@ -1,4 +1,4 @@
-mixin index( title, text, what )
+mixin index( title, text, what, what_2 )
     doctype
     html
         include m-head
@@ -6,7 +6,7 @@ mixin index( title, text, what )
         body
             #container
                 include header
-                +header( text, what )
+                +header( text, what, what_2 )
                 .main__container
                     .main__holder
                         include captcha-image
