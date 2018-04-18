@@ -1,4 +1,4 @@
-mixin index( title, text, what, what_2 )
+mixin index( title, text, what, what_2, elem )
     doctype
     html
         include m-head
@@ -6,7 +6,7 @@ mixin index( title, text, what, what_2 )
         body
             #container
                 include header
-                +header( text, what, what_2 )
+                +header( text, what, what_2, elem )
                 form
                     .main__container
                         .main__holder

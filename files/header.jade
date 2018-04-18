@@ -1,13 +1,28 @@
-mixin header( text, what, what_2 )
-    .header__container
-        .header
-            .header__logo
-            .header__description Сайт содержит материалы эро содержания&nbsp;
-                strong #{ text }
-            a( href="#" ).header__cross
-                .icon__cross
-        .header__purpose
-        .header__info Выберите изображения&nbsp;
-            strong #{ what }
-            | &nbsp;#{ what_2 }:
+mixin header( text, what, what_2, elem )
+    case elem
+        when '+'
+            .header__container
+                .header
+                    .header__logo
+                    .header__description Сайт содержит материалы эро содержания&nbsp;
+                        strong #{ text }
+                    .header__elem
+                    a( href="#" ).header__cross
+                        .icon__cross
+                .header__purpose
+                .header__info Выберите изображения&nbsp;
+                    strong #{ what }
+                    | &nbsp;#{ what_2 }:
+        default
+            .header__container
+                .header
+                    .header__logo
+                    .header__description Сайт содержит материалы эро содержания&nbsp;
+                        strong #{ text }
+                    a( href="#" ).header__cross
+                        .icon__cross
+                .header__purpose
+                .header__info Выберите изображения&nbsp;
+                    strong #{ what }
+                    | &nbsp;#{ what_2 }:
 
