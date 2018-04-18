@@ -1,3 +1,29 @@
 @import '../../../../var';
 @import '../../../../reset';
 @import '../../../../style';
+
+
+.header {
+  background: rgb(34, 50, 65);
+}
+.header__logo {
+  max-height: 30px;
+}
+.header__description {
+  color: whitesmoke;
+}
+.header__info {
+  > strong {
+    color: rgb(175, 203, 36);
+  }
+}
+input.captcha-checkbox:checked + .captcha__image{
+  box-shadow: inset 0 0 0 5px rgba(34, 50, 65, .8);
+  border-radius: 2px;
+}
+
+.button__choose {
+  background: url("../img/back-button.png") center no-repeat;
+  background-size: 100% 100%;
+  color: whitesmoke;
+}
