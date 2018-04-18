@@ -1209,6 +1209,10 @@ input[name='captcha-checkbox']:checked + .captcha__image {
   html {
     font-size: 10px;
   }
+
+  .header__purpose {
+    display: none;
+  }
 }
 
 @media screen and (min-height: 690px) {
@@ -1234,6 +1238,12 @@ input[name='captcha-checkbox']:checked + .captcha__image {
 @media screen and (min-height: 800px) and (orientation: landscape) {
   .header {
     height: 60px;
+  }
+}
+
+@media screen and (max-height: 310px) and (orientation: landscape) {
+  .header__purpose {
+    display: none;
   }
 }
 
