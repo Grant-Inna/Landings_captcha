@@ -18,13 +18,13 @@ gulp.task( 'browser', function() {
     });
 });
 
-/*gulp.task( 'copyFonts', function() {
-    return gulp.src( 'src/font/!*.{ttf,woff,woff2,eot,svg}' )
+gulp.task( 'copyFonts', function() {
+    return gulp.src( 'development/font/*.{ttf,woff,woff2,eot,svg}' )
         .pipe(gulp.dest( 'production/font/' ))
-});*/
+});
 
 gulp.task('imageMIN', function() {
-    return gulp.src( 'img/*.{png,jpg,jpeg,svg}' )
+    return gulp.src( 'development/img/*.{png,jpg,jpeg,svg}' )
         .pipe(imagemin())
         .pipe(gulp.dest( 'production/img/' ))
         .pipe(notify('Images Compress Success!'));
@@ -68,5 +68,5 @@ gulp.task('jade', function() {
 
 
 
-gulp.task('default', ['CSS', 'jade', 'watch_JADE', 'watch_CSS', 'imageMIN', 'watch_imageMIN']);
+gulp.task('default', ['copyFonts', 'CSS', 'jade', 'watch_JADE', 'watch_CSS', 'imageMIN', 'watch_imageMIN']);
 gulp.task('images', ['imageMIN', 'watch_imageMIN']);
