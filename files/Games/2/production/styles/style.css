@@ -1165,26 +1165,6 @@ html {
   background: #1f0842;
 }
 
-.button__choose {
-  background: #7438d6;
-  color: whitesmoke;
-  border-radius: 25px;
-  -webkit-box-shadow: 9px 16px 40px 0 rgba(116, 56, 214, 0.34);
-          box-shadow: 9px 16px 40px 0 rgba(116, 56, 214, 0.34);
-}
-
-.captcha__image {
-  -webkit-box-shadow: inset 0 0 0 5px rgba(250, 250, 250, 0.95);
-          box-shadow: inset 0 0 0 5px rgba(250, 250, 250, 0.95);
-  border-radius: 1px;
-}
-
-input.captcha-checkbox:checked + .captcha__image {
-  -webkit-box-shadow: inset 0 0 0 5px rgba(116, 56, 214, 0.8);
-          box-shadow: inset 0 0 0 5px rgba(116, 56, 214, 0.8);
-  border-radius: 1px;
-}
-
 .header__logo {
   max-height: 74%;
   margin-right: 10px;
@@ -1208,6 +1188,32 @@ input.captcha-checkbox:checked + .captcha__image {
   color: #7438d6;
   font-size: large;
   margin-left: auto;
+}
+
+.button__choose {
+  background: #7438d6;
+  color: whitesmoke;
+  border-radius: 25px;
+  -webkit-box-shadow: 9px 16px 40px 0 rgba(116, 56, 214, 0.34);
+          box-shadow: 9px 16px 40px 0 rgba(116, 56, 214, 0.34);
+}
+
+.captcha__container {
+  -webkit-box-shadow: 3px 2px 4px 3px rgba(169, 169, 169, 0.4);
+          box-shadow: 3px 2px 4px 3px rgba(169, 169, 169, 0.4);
+  margin: 5px;
+}
+
+.captcha__image {
+  -webkit-box-shadow: inset 0 0 0 5px rgba(250, 250, 250, 0.95);
+          box-shadow: inset 0 0 0 5px rgba(250, 250, 250, 0.95);
+  border-radius: 1px;
+}
+
+input.captcha-checkbox:checked + .captcha__image {
+  -webkit-box-shadow: inset 0 0 0 5px rgba(116, 56, 214, 0.8);
+          box-shadow: inset 0 0 0 5px rgba(116, 56, 214, 0.8);
+  border-radius: 1px;
 }
 
 @media screen and (min-width: 359px) and (min-height: 660px) and (orientation: portrait) {

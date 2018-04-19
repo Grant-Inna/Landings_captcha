@@ -15,23 +15,6 @@ body, html {
 .header {
   background: rgb(31, 8, 66);
 }
-.button__choose {
-  background: rgb(116, 56, 214);
-  color: whitesmoke;
-  border-radius: 25px;
-  box-shadow: 9px 16px 40px 0 rgba(116, 56, 214, 0.34);
-
-  .landscape( border-radius, 13px)
-}
-.captcha__image{
-  box-shadow: inset 0 0 0 5px rgba(250, 250, 250, 0.95);
-  border-radius: 1px;
-}
-
-input.captcha-checkbox:checked + .captcha__image{
-  box-shadow: inset 0 0 0 5px rgba(116, 56, 214, 0.8);
-  border-radius: 1px;
-}
 
 .header__logo {
   max-height: 74%;
@@ -61,4 +44,28 @@ input.captcha-checkbox:checked + .captcha__image{
 }
 
 .header__info {
+}
+
+.button__choose {
+  background: rgb(116, 56, 214);
+  color: whitesmoke;
+  border-radius: 25px;
+  box-shadow: 9px 16px 40px 0 rgba(116, 56, 214, 0.34);
+
+  .landscape( border-radius, 13px)
+}
+
+.captcha__container {
+  box-shadow: 3px 2px 4px 3px rgba(169, 169, 169, 0.4);
+  margin: 5px;
+}
+
+.captcha__image{
+  box-shadow: inset 0 0 0 5px rgba(250, 250, 250, 0.95);
+  border-radius: 1px;
+}
+
+input.captcha-checkbox:checked + .captcha__image{
+  box-shadow: inset 0 0 0 5px rgba(116, 56, 214, 0.8);
+  border-radius: 1px;
 }
