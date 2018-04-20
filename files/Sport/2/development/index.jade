@@ -1,0 +1,32 @@
+doctype
+html
+    include ../../../m-head
+    +head(title)
+    body
+        #container
+            .header__container
+                .header
+                    .header__logo
+                    .header__description Сайт содержит материалы эро содержания&nbsp;
+                    .header__elem
+                    a( href="#" ).header__cross
+                        .icon__cross
+                .header__purpose
+                .header__info Выберите&nbsp;
+                    strong одинаковые
+                    | &nbsp;изображения
+            form
+                .main__container
+                    .main__holder
+                        include ../../../captcha-image
+                        +captcha-image( '1' )
+                        +captcha-image( '2' )
+                        +captcha-image( '3' )
+                        +captcha-image( '4' )
+                        +captcha-image( '5' )
+                        +captcha-image( '6' )
+                        +captcha-image( '7' )
+                        +captcha-image( '8' )
+                        +captcha-image( '9' )
+                include ../../../footer
+
