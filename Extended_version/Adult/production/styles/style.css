@@ -927,7 +927,8 @@ body {
 .header__info {
   width: 100%;
   height: auto;
-  padding: .8rem 1rem;
+  padding: 1.2rem .5rem 1rem;
+  font-size: 1.3rem;
   text-align: center;
   color: #202020;
 }
@@ -1186,7 +1187,7 @@ input.captcha-checkbox:checked + .captcha__image {
   -webkit-box-flex: 10;
       -ms-flex-positive: 10;
           flex-grow: 10;
-  height: calc(100% - 50px);
+  height: 100%;
 }
 
 .screen {
@@ -1380,10 +1381,6 @@ p {
 
   .main__button {
     min-height: 65px;
-  }
-
-  #content {
-    height: 100%;
   }
 }
 
