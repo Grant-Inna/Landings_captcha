@@ -1,0 +1,8 @@
+mixin captcha-image(numb)
+   .captcha__container
+        .image__container
+            .relation__ratio-1x1
+            .relation__content
+                input( type="checkbox", name="captcha-checkbox", id="checkbox-#{numb}" ).captcha-checkbox
+                .captcha__image( class=" captcha__image-#{numb}" )
+
