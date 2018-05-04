@@ -1334,7 +1334,9 @@ p {
   text-align: center;
   font-size: 1.7rem;
   border-radius: 5px;
-  padding: 1rem 1rem 35px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 1rem 1rem 3.5rem;
   background: url("../img/back-text.png") center no-repeat;
   background-size: 100% 100%;
 }
@@ -1412,9 +1414,17 @@ p {
     border-radius: 10px;
   }
 
+  #content {
+    margin-top: 15px;
+  }
+
   #b_no-2,
   #b_no-3 {
     border-radius: 10px;
+  }
+
+  p {
+    margin-bottom: 10px;
   }
 }
 
