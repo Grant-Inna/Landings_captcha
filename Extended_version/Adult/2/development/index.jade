@@ -1,0 +1,64 @@
+doctype
+html
+    include ../../../m-head
+    body
+        #container
+            .header__container
+                .header
+                    .header__logo
+                    .header__description Сайт содержит материалы эро содержания&nbsp;
+                    .header__elem
+                    a( href="#" ).header__cross
+                        .icon__cross
+
+            #content
+                .screen#screen_1.show
+                    .screen-1__image
+                        p В связи с участившимися блокировками&nbsp;
+                            strong пройдите тест
+                            |, чтобы пользоваться сайтом для взрослых
+                    button#b_1
+                        div Пройти тест
+                .screen#screen_2
+                    .screen-2__image
+                        p
+                            strong Вам есть 18 лет?
+                    .buttons__container
+                        button#b_2
+                            div Да, есть
+                        button#b_no-2
+                            div Нет
+                .screen#screen_3
+                    .screen-3__image
+                        p Вы согласны&nbsp;
+                            strong не делиться содержимым сайта
+                            | &nbsp;с другими пользователями?
+                    .buttons__container
+                        button#b_3
+                            div Да
+                        button#b_no-3
+                            div Нет
+                .screen#screen_4
+                    .screen-4__image
+                        p
+                            strong Чтобы перейти на сайт, пройдите проверку на робота
+                    button#b_4
+                        div Пройти проверку
+                .screen#screen_5
+                    .header__info Выберите изображения&nbsp;
+                        strong с одинаковыми
+                        | &nbsp;фотографиями:
+                    .main__container
+                        .main__holder
+                            include ../../../captcha-image
+                            +captcha-image( '1' )
+                            +captcha-image( '2' )
+                            +captcha-image( '3' )
+                            +captcha-image( '4' )
+                            +captcha-image( '5' )
+                            +captcha-image( '6' )
+                            +captcha-image( '7' )
+                            +captcha-image( '8' )
+                            +captcha-image( '9' )
+                    include ../../../footer
+        include ../../../script

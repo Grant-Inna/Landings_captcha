@@ -1,0 +1,148 @@
+@import '../../../../var';
+@import '../../../../reset';
+@import '../../../../style';
+
+
+.header {
+  background: rgb(247, 245, 248);
+  color: #121212;
+}
+
+.button__choose, #b_1,
+#b_2,
+#b_3,
+#b_4 {
+  background: linear-gradient(180deg, rgb(192, 86, 240) 0%, rgb(146, 62, 180) 100%);
+  color: whitesmoke;
+
+  border-radius: 20px;
+  .landscape( border-radius, 10px )
+}
+
+
+input.captcha-checkbox:checked + .captcha__image{
+  box-shadow: inset 0 0 0 5px rgba(170, 45, 121, 0.8);
+  border-radius: 1px;
+}
+
+body {
+  color: whitesmoke;
+}
+
+
+.header__logo {
+  margin-right: 10px;
+}
+
+
+
+
+
+#content {
+  .relation;
+  flex-grow: 10;
+  height: 100%;
+}
+
+.screen {
+  position: absolute;
+  height: 80%;
+  top: -9999px;
+
+  .column;
+  .items-center;
+  .justify-around;
+  .full-size;
+
+  opacity: 0;
+}
+
+.screen-1__image, .screen-2__image,
+.screen-3__image, .screen-4__image {
+  padding-top: 120px;
+  width: 80%;
+  min-width: 100px;
+  max-width: 600px;
+  margin: 0 auto;
+
+}
+.screen-1__image {
+  background: url('../img/screen-1__img.png') top no-repeat;
+  background-size: 100px auto;
+}
+
+.screen-2__image, .screen-3__image {
+  background: url('../img/screen-2__img.png') top no-repeat;
+  background-size: 100px auto;
+}
+
+.screen-4__image {
+  background: url('../img/screen-4__img.png') top no-repeat;
+  background-size: 100px auto;
+}
+
+#screen_1, #screen_3 {
+  strong {
+    font-family: DinDisplay-bold, Helvetica, Arial, sans-serif;
+    color: rgb(146, 62, 180);
+    font-weight: 600;
+  }
+}
+
+
+.buttons__container {
+  width: 100%;
+  height: auto;
+}
+
+#b_2, #b_3 { margin-bottom: 1rem}
+#b_no-2, #b_no-3 {
+  background: #e8e8e8;
+  color: #151515;
+  border-radius: 20px;
+  .landscape( border-radius, 10px )
+}
+.show {
+  opacity: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+button {
+  .un-button;
+  .un-link;
+  .flex-center;
+  .relation;
+  height: auto;
+  width: 80%;
+  max-width: 460px;
+  max-height: 55px;
+  margin: 0 auto;
+  padding: 1rem;
+  min-height: 30px;
+  font-size: 2rem;
+  font-variant: all-small-caps;
+  border-radius: 2px;
+  box-sizing: content-box;
+
+
+  > div {
+    .flex-center;
+    font-family: 'DinDisplay', Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-variant: all-small-caps;
+  }
+}
+
+p {
+  color: #121212;
+  text-align: center;
+  font-size: 1.7rem;
+  border-radius: 5px;
+  padding: 1rem 1rem 35px;
+
+  background: url("../img/back-text.png") center no-repeat;
+  background-size: 100% 100%;
+}
