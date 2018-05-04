@@ -1,0 +1,142 @@
+@import '../../../../var';
+@import '../../../../reset';
+@import '../../../../style';
+
+
+.header {
+  background: rgb(34, 50, 65);
+}
+.header__logo {
+  max-height: 30px;
+}
+.header__description {
+  color: whitesmoke;
+}
+.header__info {
+  > strong {
+    color: rgb(175, 203, 36);
+    font-family: 'DinDisplay-bold', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+  }
+}
+#screen_1, #screen_3 {
+  strong {
+    color: rgb(175, 203, 36);
+    font-family: 'DinDisplay-bold', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+  }
+}
+input.captcha-checkbox:checked + .captcha__image{
+  box-shadow: inset 0 0 0 5px rgba(34, 50, 65, .8);
+  border-radius: 2px;
+}
+
+.button__choose,
+#b_1,
+#b_2,
+#b_3,
+#b_4  {
+  background: url("../img/back-button.png") center no-repeat;
+  background-size: 100% 100%;
+  color: whitesmoke;
+}
+
+
+
+.screen {
+  position: absolute;
+  height: 80%;
+  top: -9999px;
+  color: #303030;
+  background: #fcfcfc;
+
+  .column;
+  .items-center;
+  .justify-around;
+  .full-size;
+
+  opacity: 0;
+}
+
+.screen-1__image, .screen-2__image,
+.screen-3__image, .screen-4__image {
+  padding-top: 120px;
+  width: 80%;
+  min-width: 100px;
+  max-width: 600px;
+  margin: 0 auto;
+
+}
+.screen-1__image {
+  background: url('../img/screen-1__img.png') top no-repeat;
+  background-size: 100px auto;
+}
+
+.screen-2__image, .screen-3__image {
+  background: url('../img/screen-2__img.png') top no-repeat;
+  background-size: 100px auto;
+}
+
+.screen-4__image {
+  background: url('../img/screen-4__img.png') top no-repeat;
+  background-size: 100px auto;
+}
+
+
+
+.buttons__container {
+  width: 100%;
+  height: auto;
+}
+
+#b_2, #b_3 { margin-bottom: 1rem}
+#b_no-2, #b_no-3 {
+  background: #e7e7e7;
+  color: #232323;
+}
+.show {
+  opacity: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+button {
+  .un-button;
+  .un-link;
+  .flex-center;
+  .relation;
+  height: auto;
+  width: 80%;
+  max-width: 460px;
+  max-height: 55px;
+  margin: 0 auto;
+  padding: 1rem;
+  min-height: 30px;
+  border-radius: 2px;
+  box-sizing: content-box;
+  font-size: 1.5rem;
+
+
+  > div {
+    .flex-center;
+    text-transform: uppercase;
+    font-family: 'DinDisplay', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+  }
+}
+
+p {
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.captcha__container {
+  margin: 5px;
+}
+
+
+.icon__cross {
+  top: 25%;
+}
