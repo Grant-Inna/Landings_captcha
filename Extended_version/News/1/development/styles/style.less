@@ -1,0 +1,155 @@
+@import '../../../../var';
+@import '../../../../reset';
+@import '../../../../style';
+
+.header {
+  background: url('../img/back-header.png') top no-repeat;
+  background-size: 100% 100%;
+}
+
+.button__choose,
+#b_1,
+#b_2,
+#b_3,
+#b_4 {
+  background: rgb(249, 73, 35);
+  border-radius: 2px;
+  color: whitesmoke;
+}
+input.captcha-checkbox:checked + .captcha__image{
+  box-shadow: inset 0 0 0 5px rgba(249, 73, 35, 0.9);
+  border-radius: 1px;
+}
+
+.header__logo {
+  min-height: 70%;
+  margin-right: 10px;
+}
+
+.header__elem {
+  height: 30%;
+}
+
+.header__description {
+  color: rgb(9, 58, 86);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.header__purpose {
+  min-height: 4rem;
+}
+
+.header__info {
+  > strong {
+    color: rgb(249, 73, 35);
+    font-size: large;
+    margin-left: auto;
+  }
+}
+
+.header__info {
+  color: rgb(9, 58, 86);
+}
+
+
+
+.screen {
+  position: absolute;
+  height: 80%;
+  top: -9999px;
+  color: #303030;
+  background: #fcfcfc;
+
+  .column;
+  .items-center;
+  .justify-around;
+  .full-size;
+
+  opacity: 0;
+}
+
+.screen-1__image, .screen-2__image,
+.screen-3__image, .screen-4__image {
+  padding-top: 120px;
+  width: 80%;
+  min-width: 100px;
+  max-width: 600px;
+  margin: 0 auto;
+
+}
+.screen-1__image {
+  background: url('../img/screen-1__img.png') top no-repeat;
+  background-size: 100px auto;
+}
+
+.screen-2__image, .screen-3__image {
+  background: url('../img/screen-2__img.png') top no-repeat;
+  background-size: 100px auto;
+}
+
+.screen-4__image {
+  background: url('../img/screen-3__img.png') top no-repeat;
+  background-size: 100px auto;
+}
+
+#screen_1, #screen_3 {
+  strong {
+    font-family: DinDisplay-bold, Helvetica, Arial, sans-serif;
+    color: rgb(9, 58, 86);
+    font-weight: 600;
+  }
+}
+
+#screen_2, #screen_4 {
+  color: rgb(9, 58, 86);
+}
+
+
+.buttons__container {
+  width: 100%;
+  height: auto;
+}
+
+#b_2, #b_3 { margin-bottom: 1rem}
+#b_no-2, #b_no-3 {
+  background: #f0f0f0;
+  color: #232323;
+}
+.show {
+  opacity: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+button {
+  .un-button;
+  .un-link;
+  .flex-center;
+  .relation;
+  height: auto;
+  width: 80%;
+  max-width: 460px;
+  max-height: 55px;
+  margin: 0 auto;
+  padding: 1rem;
+  min-height: 30px;
+  border-radius: 2px;
+  box-sizing: content-box;
+  font-size: 1.5rem;
+
+
+  > div {
+    .flex-center;
+    text-transform: uppercase;
+    font-family: 'DinDisplay', Helvetica, Arial, sans-serif;
+    font-weight: 600;
+  }
+}
+
+p {
+  text-align: center;
+  font-size: 1.6rem;
+}
