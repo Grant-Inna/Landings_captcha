@@ -847,6 +847,14 @@ body {
   margin: 0 auto;
 }
 
+#content {
+  position: relative;
+  -webkit-box-flex: 10;
+      -ms-flex-positive: 10;
+          flex-grow: 10;
+  height: 100%;
+}
+
 .header__container {
   width: 100%;
   height: auto;

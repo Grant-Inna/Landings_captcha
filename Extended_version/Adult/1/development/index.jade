@@ -1,9 +1,9 @@
 doctype
 html
-    include ../../m-head
+    include ../../../m-head
     body
         #container
-            include ../../header
+            include ../../../header
 
             #content
                 .screen#screen_1.show
@@ -44,7 +44,7 @@ html
                         | &nbsp;на фото:
                     .main__container
                         .main__holder
-                            include ../../captcha-image
+                            include ../../../captcha-image
                             +captcha-image( '1' )
                             +captcha-image( '2' )
                             +captcha-image( '3' )
@@ -54,5 +54,5 @@ html
                             +captcha-image( '7' )
                             +captcha-image( '8' )
                             +captcha-image( '9' )
-                    include ../../footer
-        script( type="text/javascript") document.getElementById( "b_1" ).addEventListener( 'click', show2); document.getElementById( "b_2" ).addEventListener( 'click', show3); document.getElementById( "b_3" ).addEventListener( 'click', show4); document.getElementById( "b_4" ).addEventListener( 'click', show5);  document.getElementById( "b_5" ).addEventListener( 'click', show6); document.getElementById( "b_6" ).addEventListener( 'click', show); function show2() {document.getElementById( "screen_1" ).classList.remove('show');document.getElementById( "screen_2" ).className += ' show';} function show3() {document.getElementById( "screen_2" ).classList.remove('show');document.getElementById( "screen_3" ).className += ' show';} function show4() {document.getElementById( "screen_3" ).classList.remove('show');document.getElementById( "screen_4" ).className += ' show';} function show5() {document.getElementById( "screen_4" ).classList.remove('show');document.getElementById( "screen_5" ).className += ' show';} function show6() {document.getElementById( "screen_5" ).classList.remove('show');document.getElementById( "screen_6" ).className += ' show';}
+                    include ../../../footer
+        include ../../../script
