@@ -1,0 +1,135 @@
+@import '../../../../var';
+@import '../../../../reset';
+@import '../../../../style';
+
+body, html {
+  height: 100%;
+}
+
+.screen {
+  min-height: 100%;
+  background: url('../img/bg.png') center no-repeat;
+  background-size: cover;
+}
+
+.header {
+  background: rgb(31, 8, 66);
+}
+
+.header__logo {
+  max-height: 74%;
+  margin-right: 10px;
+}
+
+.header__elem {
+  height: 30%;
+}
+
+.header__description {
+  color: whitesmoke;
+  font-style: italic;
+}
+
+.header__purpose {
+  min-height: 3rem;
+  margin: .3rem auto -.15rem;
+}
+
+.header__info {
+  > strong {
+    font-family: DinDisplay-bold, Helvetica, Arial, sans-serif;
+    color: rgb(116, 56, 214);
+    font-size: large;
+    margin-left: auto;
+  }
+}
+
+.button__choose {
+  height: auto;
+  width: 90%;
+  max-width: 460px;
+  max-height: 55px;
+  margin: 0 auto;
+  padding: 1rem;
+  min-height: 50px;
+
+  div {
+    font-family: DinDisplay-bold, Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    font-size: larger;
+  }
+}
+
+.button__choose,
+#b_1,
+#b_2,
+#b_3,
+#b_4 {
+  background: rgb(116, 56, 214);
+  color: whitesmoke;
+  border-radius: 25px;
+  box-shadow: 9px 10px 8px 0 rgba(116,56,214,.34);
+
+  .landscape( border-radius, 13px)
+}
+
+.captcha__container {
+  box-shadow: 3px 2px 4px 3px rgba(169, 169, 169, 0.4);
+  margin: 5px;
+}
+
+.captcha__image{
+  box-shadow: inset 0 0 0 5px rgba(250, 250, 250, 0.95);
+  border-radius: 1px;
+}
+
+input.captcha-checkbox:checked + .captcha__image{
+  box-shadow: inset 0 0 0 5px rgba(116, 56, 214, 0.8);
+  border-radius: 1px;
+}
+
+
+#screen_1, #screen_3 {
+  strong {
+    font-family: DinDisplay-bold, Helvetica, Arial, sans-serif;
+    color: rgb(116, 56, 214);
+    font-weight: 600;
+  }
+}
+
+
+.button__choose, #b_2, #b_3 { margin-bottom: 1rem}
+#b_no-2, #b_no-3 {
+  background: #cecece;
+  color: #232323;
+
+  border-radius: 25px;
+  .landscape( border-radius, 13px)
+}
+
+
+.screen-1__image, .screen-2__image,
+.screen-3__image, .screen-4__image {
+  padding-top: 120px;
+  width: 80%;
+  min-width: 100px;
+  max-width: 600px;
+  margin: 0 auto;
+
+}
+
+
+.screen-1__image {
+  background: url('../img/screen-1__img.png') top no-repeat;
+  background-size: 110px auto;
+}
+
+.screen-2__image, .screen-3__image {
+  background: url('../img/screen-2__img.png') top no-repeat;
+  background-size: 110px auto;
+}
+
+.screen-4__image {
+  background: url('../img/screen-3__img.png') top no-repeat;
+  background-size: 110px auto;
+}
